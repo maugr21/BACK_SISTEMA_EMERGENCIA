@@ -34,7 +34,7 @@ function writeUserData(idReporte, desc) {
     });
 }
 
-// ✅ Agregar un reporte con ID y descripción
+
 writeUserData("R00006", "Incendio en casa habitación");
 
 // 🔹 Función para leer datos desde Firebase
@@ -53,12 +53,10 @@ function readUserData(idReporte) {
     });
 }
 
-// ✅ Leer datos de un reporte específico
 readUserData("R00001");
 
-// 🔹 Inicializar Google Maps
 function initMap() {
-  const center = { lat: 19.432608, lng: -99.133209 }; // Coordenadas iniciales
+  const center = { lat: 20.5888, lng: -100.3899 }; 
   const map = new google.maps.Map(document.getElementById("map"), {
     center: center,
     zoom: 10
